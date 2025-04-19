@@ -2,6 +2,17 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Side from '../assets/Frame 2.png';
+import Marquee from "react-fast-marquee";
+import img7 from '../assets/image 7.svg';
+import img11 from '../assets/image 11.svg';
+import img12 from '../assets/image 12.svg';
+import img13 from '../assets/image 13.svg';
+import img14 from '../assets/image 14.svg';
+import img16 from '../assets/image 16.svg';
+import img17 from '../assets/image 17.svg';
+import img18 from '../assets/image 18.svg';
+import Side2 from '../assets/Manage.png';
+import Dash from '../assets/Dashboard.png'
 //import { sendDemoRequest, subscribeToNewsletter } from '../services/emailService';
 
 function HomePage() {
@@ -100,26 +111,36 @@ function HomePage() {
         height: '50vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: '40px',
+        marginBottom: '200px',
       }}>
         <h2 style={{ fontSize: '3vw', marginBottom: '2vh' }}>Trusted by Leading Companies</h2>
         <p style={{ fontSize: '1.5vw', width: '70%', margin: '0 auto', marginBottom: '5vh' }}>
           Join hundreds of companies using needs.ai to optimize their inventory forecasting and business operations
         </p>
         <div style={{ 
-          display: 'flex', 
+          display: 'flex',
+          flexDirection: 'column', 
           justifyContent: 'space-between', 
           width: '80%',
           margin: '0 auto',
-          opacity: '0.7'
-        }}>
-          {/* Placeholder for company logos */}
-          <div className="company-logo" style={{ width: '15%', height: '10vh', backgroundColor: '#f0f0f0' }}></div>
-          <div className="company-logo" style={{ width: '15%', height: '10vh', backgroundColor: '#f0f0f0' }}></div>
-          <div className="company-logo" style={{ width: '15%', height: '10vh', backgroundColor: '#f0f0f0' }}></div>
-          <div className="company-logo" style={{ width: '15%', height: '10vh', backgroundColor: '#f0f0f0' }}></div>
-          <div className="company-logo" style={{ width: '15%', height: '10vh', backgroundColor: '#f0f0f0' }}></div>
-        </div>
+          opacity: '0.7',
+          padding: '0 20px'
+        }}>        
+        <Marquee gradient={false} speed={50} style={{ paddingTop: "40px" }}>
+        <img src={img7} alt="Logo 1" style={{ height: 50, marginRight: 100 }} />
+        <img src={img12} alt="Logo 2" style={{ height: 50, marginRight: 100 }} />
+        <img src={img13} alt="Logo 3" style={{ height: 50, marginRight: 100 }} />
+        <img src={img14} alt="Logo 4" style={{ height: 50, marginRight: 100 }} />
+      </Marquee>
+      <Marquee gradient={false} speed={50} style={{ paddingTop: "40px" }} direction='right'>
+        <img src={img16} alt="Logo 5" style={{ height: 50, marginRight: 100 }} />
+        <img src={img17} alt="Logo 6" style={{ height: 50, marginRight: 100 }} />
+        <img src={img11} alt="Logo 7" style={{ height: 50, marginRight: 100 }} />
+        <img src={img18} alt="Logo 8" style={{ height: 50, marginRight: 100 }} />
+      </Marquee>
+      </div>
       </section>
       
       {/* About Section */}
@@ -143,7 +164,7 @@ function HomePage() {
           alignItems: 'center', 
           width: '80%', 
           margin: '0 auto',
-          height: '60vh'
+          height: '130vh',
         }}>
           <div style={{ flex: 1, marginRight: '5%' }}>
             <h3 style={{ fontSize: '2.5vw', marginBottom: '2vh' }}>Helping businesses optimize inventory management</h3>
@@ -187,11 +208,12 @@ function HomePage() {
             {/* Placeholder for dashboard image */}
             <div style={{ 
               width: '100%', 
-              height: '40vh', 
               backgroundColor: '#e0e0e0', 
               borderRadius: '8px',
               boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
-            }}></div>
+            }}>
+              <img src={Side2} alt="" width={'100%'} />
+            </div>
           </div>
         </div>
       </section>
@@ -203,7 +225,8 @@ function HomePage() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        padding: '5vh 0'
+        padding: '5vh 0',
+        marginTop: '40px',
       }}>
         <h2 style={{ textAlign: 'center', fontSize: '3vw', marginBottom: '2vh' }}>Our Services</h2>
         <p style={{ 
@@ -211,7 +234,7 @@ function HomePage() {
           fontSize: '1.5vw', 
           width: '70%', 
           margin: '0 auto', 
-          marginBottom: '5vh' 
+          marginBottom: '5vh',
         }}>
           Our AI-powered solutions help businesses optimize their inventory management and forecast demand with high accuracy
         </p>
@@ -798,7 +821,7 @@ function HomePage() {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-              <p style={{ fontSize: '1.5vw', color: '#999' }}>Dashboard Screenshot</p>
+              <img src={Dash} alt="" width={'100%'} style={{ borderRadius: '8px' }} />
             </div>
           </div>
         </div>
