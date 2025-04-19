@@ -5,9 +5,9 @@ import Plans from './pages/Plans';
 import AboutUs from './pages/AboutUs';
 import Partners from './pages/Partners';
 import Customers from './pages/Customers'; // Import the Customers page
-import Login from './Pages/Login'
-import Signup from './Pages/Signup'
-import Manage from './Pages/Manage'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Manage from './pages/Manage'
 import './index.css'
 
 function App() {
