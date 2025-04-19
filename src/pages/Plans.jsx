@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/Logo.svg';
 
 function Plans() {
   return (
