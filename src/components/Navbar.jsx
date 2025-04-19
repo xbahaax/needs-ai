@@ -31,22 +31,22 @@ function Navbar() {
       
       {/* Sign in/up buttons on the right */}
       <div style={{display: "flex", gap: "1rem"}}>
-        <button style={{
+        <Link to="/Login"style={{
           padding: "0.5rem 1rem",
           backgroundColor: "transparent",
           border: "1px solid #007bff",
           borderRadius: "4px",
           color: "#007bff",
           cursor: "pointer"
-        }}>Sign In</button>
-        <button style={{
+        }}>Sign In</Link>
+        <Link to="/signup" style={{
           padding: "0.5rem 1rem",
           backgroundColor: "#007bff",
           border: "none",
           borderRadius: "4px",
           color: "white",
           cursor: "pointer"
-        }}>Sign Up</button>
+        }}>Sign Up</Link>
       </div>
     </div>
   )
