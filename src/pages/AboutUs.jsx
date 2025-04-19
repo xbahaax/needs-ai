@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Logo from '../assets/logo.svg'
 
 function AboutUs() {
   return (
@@ -56,7 +57,6 @@ function AboutUs() {
           <div style={{ 
             width: '100%', 
             height: '400px', 
-            backgroundColor: '#e0e0e0',
             borderRadius: '8px',
             display: 'flex',
             justifyContent: 'center',
@@ -64,7 +64,7 @@ function AboutUs() {
             color: '#999',
             fontSize: '1.2rem'
           }}>
-            Company Image
+            <img src={Logo} alt="Logo" style={{ height: "100px",widows:"100px", cursor: "pointer" }} />
           </div>
         </div>
       </section>
