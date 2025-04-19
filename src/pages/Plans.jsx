@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Logo from '../assets/Logo.svg';
 
 function Plans() {
   return (
@@ -14,7 +13,6 @@ function Plans() {
         padding: '60px 0',
         backgroundColor: '#f8f9fa'
       }}>
-        <img src={Logo} alt="NEEDS.AI Logo" style={{ marginBottom: '20px', height: '60px' }} />
         <h1 style={{fontFamily: "'Orbit', sans-serif", fontSize: '2rem', color: '#1a237e', marginBottom: '20px' }}>
           Unlock the Power of Predictive AI
         </h1>
